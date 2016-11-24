@@ -11,12 +11,13 @@ namespace Acr.UserDialogs
         public static string DefaultOkText { get; set; } = "Ok";
         public static string DefaultCancelText { get; set; } = "Cancel";
         public static int? DefaultAndroidStyleId { get; set; }
-
+      
 
         public string Title { get; set; }
         public string Message { get; set; }
         public int? AndroidStyleId { get; set; }
         public Action<bool> OnAction { get; set; }
+        public bool IgnoreBackButton { get; set; } = false;
 
         public string OkText { get; set; } = DefaultOkText;
         public string CancelText { get; set; } = DefaultCancelText;
