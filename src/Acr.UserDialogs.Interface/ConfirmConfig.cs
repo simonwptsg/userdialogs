@@ -17,6 +17,7 @@ namespace Acr.UserDialogs
         public string Message { get; set; }
         public int? AndroidStyleId { get; set; }
         public Action<bool> OnAction { get; set; }
+        public bool IgnoreBackKey { get; set; }
 
         public string OkText { get; set; } = DefaultOkText;
         public string CancelText { get; set; } = DefaultCancelText;
