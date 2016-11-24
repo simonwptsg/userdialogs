@@ -12,9 +12,6 @@ namespace Acr.UserDialogs.Fragments
         protected override void OnKeyPress(object sender, DialogKeyEventArgs args)
         {
             base.OnKeyPress(sender, args);
-
-            if (this.Config != null && this.Config.IgnoreBackKey) return;
-
             if (args.KeyCode != Keycode.Back)
                 return;
 
@@ -36,9 +33,6 @@ namespace Acr.UserDialogs.Fragments
         protected override void OnKeyPress(object sender, DialogKeyEventArgs args)
         {
             base.OnKeyPress(sender, args);
-
-            if (this.Config != null && this.Config.IgnoreBackKey) return;
-
             if (args.KeyCode != Keycode.Back)
                 return;
 
